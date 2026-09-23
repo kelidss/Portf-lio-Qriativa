@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qriativa · Videomaker, Fotografia e Social Media</title>
+  <meta name="description" content="Qriativa, por Qetlei Jennifer: videomaker pro e mobile, fotografia corporativa, cobertura de eventos em tempo real e social media. Aposte em quem Qria.">
+  <meta property="og:title" content="Qriativa · Aposte em quem Qria.">
+  <meta property="og:description" content="Videomaker, fotografia e social media com um olhar Qriativo.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/refino.css">
+</head>
+<body>
+
+  <!-- Formas reutilizáveis (flor / logo Q) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <clipPath id="flower" clipPathUnits="objectBoundingBox">
+        <circle cx=".5" cy=".5" r=".4"/>
+        <circle cx=".81" cy=".5" r=".19"/>
+        <circle cx=".719" cy=".719" r=".19"/>
+        <circle cx=".5" cy=".81" r=".19"/>
+        <circle cx=".281" cy=".719" r=".19"/>
+        <circle cx=".19" cy=".5" r=".19"/>
+        <circle cx=".281" cy=".281" r=".19"/>
+        <circle cx=".5" cy=".19" r=".19"/>
+        <circle cx=".719" cy=".281" r=".19"/>
+      </clipPath>
+      <g id="flower-shape">
+        <circle cx="50" cy="50" r="40"/>
+        <circle cx="81" cy="50" r="19"/>
+        <circle cx="71.9" cy="71.9" r="19"/>
+        <circle cx="50" cy="81" r="19"/>
+        <circle cx="28.1" cy="71.9" r="19"/>
+        <circle cx="19" cy="50" r="19"/>
+        <circle cx="28.1" cy="28.1" r="19"/>
+        <circle cx="50" cy="19" r="19"/>
+        <circle cx="71.9" cy="28.1" r="19"/>
+      </g>
+      <mask id="q-hole">
+        <g fill="#fff"><use href="#flower-shape"/></g>
+        <circle cx="50" cy="50" r="16" fill="#000"/>
+      </mask>
+      <symbol id="logo-q" viewBox="0 0 100 100">
+        <g mask="url(#q-hole)"><use href="#flower-shape" fill="currentColor"/></g>
+        <line x1="66" y1="66" x2="88" y2="88" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__brand" aria-label="Qriativa, início">
+        <svg class="q" aria-hidden="true"><use href="#logo-q"/></svg>
+        <span>riativa<i>.</i></span>
+      </a>
+      <nav class="nav__links" id="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#valores">Valores</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn--sm" href="https://wa.me/5585996287631?text=Ol%C3%A1%2C%20Qetlei!%20Vim%20pelo%20site%20e%20quero%20reservar%20uma%20data." target="_blank" rel="noopener">Reservar data</a>
+      </nav>
+      <button class="nav__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__flower hero__flower--a" aria-hidden="true"></div>
+      <div class="hero__flower hero__flower--b" aria-hidden="true"></div>
+      <span class="hero__mini hero__mini--1" aria-hidden="true"></span>
+      <span class="hero__mini hero__mini--2" aria-hidden="true"></span>
+      <span class="hero__mini hero__mini--3" aria-hidden="true"></span>
+      <div class="container hero__inner">
+        <p class="hero__kicker">Portfólio · Qetlei Jennifer</p>
+        <h1 class="wordmark" aria-label="Qriativa">
+          <svg class="q" aria-hidden="true"><use href="#logo-q"/></svg><span>riativa</span><svg class="dot" viewBox="0 0 100 100" aria-hidden="true"><use href="#flower-shape" fill="currentColor"/></svg>
+        </h1>
+        <p class="hero__tagline">Contando histórias que conectam, com um celular na mão ou uma câmera no ombro.</p>
+        <ul class="hero__chips" aria-label="Serviços">
+          <li>Videomaker Pro</li>
+          <li>Videomaker Mobile</li>
+          <li>Fotografia Corporativa</li>
+          <li>Eventos Real Time</li>
+          <li>Social Media</li>
+        </ul>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#portfolio">Ver portfólio</a>
+          <a class="btn btn--ghost" href="https://www.instagram.com/qriativa" target="_blank" rel="noopener">@qriativa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE DE CLIENTES -->
+    <div class="marquee" aria-label="Marcas atendidas">
+      <div class="marquee__track">
+        <span>Alana D'Avila</span><i></i><span>Dra. Fabiana Lustosa</span><i></i><span>Trent Fit</span><i></i><span>PaniFátima</span><i></i><span>Casa Freitas</span><i></i><span>Mabrouk Consórcio</span><i></i><span>DFB Festival</span><i></i><span>INTRO</span><i></i><span>Prefeitura do Aracati</span><i></i>
+        <span>Alana D'Avila</span><i></i><span>Dra. Fabiana Lustosa</span><i></i><span>Trent Fit</span><i></i><span>PaniFátima</span><i></i><span>Casa Freitas</span><i></i><span>Mabrouk Consórcio</span><i></i><span>DFB Festival</span><i></i><span>INTRO</span><i></i><span>Prefeitura do Aracati</span><i></i>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section class="sobre section paper" id="sobre">
+      <div class="container sobre__grid">
+        <div class="sobre__text reveal">
+          <p class="eyebrow">Sobre</p>
+          <h2 class="title"><em>Q</em>etlei Jennifer</h2>
+          <p>Oi! Sou apaixonada por contar histórias e tenho um amor profundo pela arte em suas diversas formas.</p>
+          <p>Com 4 anos de experiência no mercado, tive a oportunidade de explorar e trabalhar em várias áreas criativas, como fotografia, edição e produção de vídeos para plataformas como YouTube, Instagram e TikTok.</p>
+          <p>Acredito que cada aprendizado ao longo dessa jornada é valioso e, por isso, decidi reunir o melhor de todas essas experiências para dar vida à Qriativa!</p>
+          <ul class="stats">
+            <li><strong>4+</strong><span>anos de mercado</span></li>
+            <li><strong>9</strong><span>marcas no portfólio</span></li>
+            <li><strong>3</strong><span>plataformas: YouTube, Instagram e TikTok</span></li>
+          </ul>
+        </div>
+        <div class="sobre__photo reveal">
+          <div class="sobre__ring" aria-hidden="true"></div>
+          <div class="flower-frame">
+            <div class="media"><img src="assets/fotos/qetlei.jpg" alt="Qetlei Jennifer, criadora da Qriativa"></div>
+          </div>
+          <div class="sobre__blob" aria-hidden="true"></div>
+          <span class="chip chip--1">🎬 Videomaker</span>
+          <span class="chip chip--2">📸 Fotógrafa</span>
+          <span class="chip chip--3">📱 Social Media</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALORES -->
+    <section class="valores section section--cream paper" id="valores">
+      <div class="container">
+        <h2 class="title title--center reveal"><em>V</em>alores</h2>
+        <ul class="valores__grid">
+          <li class="reveal">
+            <div class="badge-wrap"><div class="badge">Qriatividade</div></div>
+            <p>Valorizamos a inovação e a originalidade em todas as nossas soluções, buscando sempre ideias que desafiem o comum.</p>
+          </li>
+          <li class="reveal">
+            <div class="badge-wrap"><div class="badge">Colaboração</div></div>
+            <p>Acreditamos que o trabalho em equipe é fundamental. Nossas melhores ideias surgem quando unimos talentos e perspectivas diferentes.</p>
+          </li>
+          <li class="reveal">
+            <div class="badge-wrap"><div class="badge">Autenticidade</div></div>
+            <p>Promovemos uma comunicação honesta e transparente, tanto internamente quanto com nossos clientes, valorizando a singularidade de cada marca.</p>
+          </li>
+          <li class="reveal">
+            <div class="badge-wrap"><div class="badge">Inovação</div></div>
+            <p>Estamos sempre nos atualizando com as últimas tendências e tecnologias, buscando constantemente novas formas de impactar positivamente.</p>
+          </li>
+        </ul>
+        <svg class="q q--mark" aria-hidden="true"><use href="#logo-q"/></svg>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos section paper" id="servicos">
+      <div class="container">
+        <header class="servicos__head">
+          <div class="reveal">
+            <p class="eyebrow">O que eu faço</p>
+            <h2 class="title"><em>S</em>erviços</h2>
+          </div>
+          <p class="servicos__intro reveal">Do roteiro à entrega: cada formato pensado para a sua marca aparecer do jeito certo, na plataforma certa.</p>
+        </header>
+        <ol class="svc-list">
+          <li class="reveal">
+            <a class="svc" href="#videomaker-pro">
+              <span class="svc__num">01</span>
+              <h3 class="svc__title"><em>Video</em>maker<br>Pro</h3>
+              <div class="svc__body">
+                <p class="svc__desc">Captação com câmera profissional, direção e edição para clínicas, marcas e agências.</p>
+                <ul class="svc__tags"><li>Clínicas</li><li>Institucional</li><li>Centro cirúrgico</li></ul>
+              </div>
+              <span class="svc__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <span class="svc__thumb" aria-hidden="true" style="background-image:url('assets/cases/alana-2.jpg')"></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="svc" href="#fotografia">
+              <span class="svc__num">02</span>
+              <h3 class="svc__title"><em>Foto</em>grafia<br>Corporativa</h3>
+              <div class="svc__body">
+                <p class="svc__desc">Retratos, bastidores e registro de procedimentos com estética editorial.</p>
+                <ul class="svc__tags"><li>Retratos</li><li>Bastidores</li><li>Procedimentos</li></ul>
+              </div>
+              <span class="svc__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <span class="svc__thumb" aria-hidden="true" style="background-image:url('assets/fotos/retrato-2.jpg')"></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="svc" href="#videomaker-mobile">
+              <span class="svc__num">03</span>
+              <h3 class="svc__title"><em>Video</em>maker<br>Mobile</h3>
+              <div class="svc__body">
+                <p class="svc__desc">Planejamento, roteiro, captação e edição de Reels e TikToks feitos no celular.</p>
+                <ul class="svc__tags"><li>Reels</li><li>TikTok</li><li>Social media</li></ul>
+              </div>
+              <span class="svc__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <span class="svc__thumb" aria-hidden="true" style="background-image:url('assets/cases/trent-2.jpg')"></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="svc" href="#eventos">
+              <span class="svc__num">04</span>
+              <h3 class="svc__title"><em>E</em>ventos<br>Real Time</h3>
+              <div class="svc__body">
+                <p class="svc__desc">Cobertura ao vivo com conteúdo publicado durante o próprio evento.</p>
+                <ul class="svc__tags"><li>Festivais</li><li>Shows</li><li>Credenciamento</li></ul>
+              </div>
+              <span class="svc__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <span class="svc__thumb" aria-hidden="true" style="background-image:url('assets/cases/intro-3.jpg')"></span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="svc" href="#contato">
+              <span class="svc__num">05</span>
+              <h3 class="svc__title"><em>Casa</em>mentos<br>&amp; Celebrações</h3>
+              <div class="svc__body">
+                <p class="svc__desc">Pré-wedding, casamento, aniversário e eventos. Histórias de amor contadas com um celular.</p>
+                <ul class="svc__tags"><li>Pré-wedding</li><li>Casamento</li><li>Aniversário</li></ul>
+              </div>
+              <span class="svc__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <span class="svc__thumb" aria-hidden="true" style="background-image:url('assets/fotos/qetlei.jpg')"></span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section class="portfolio" id="portfolio">
+
+      <!-- Video<em>maker</em> Pro -->
+      <div class="group section section--blush paper" id="videomaker-pro">
+        <div class="container">
+          <header class="group__head reveal">
+            <span class="group__num" aria-hidden="true">01</span>
+            <h2 class="title">Video<em>maker</em><br>Pro</h2>
+            <svg class="q" aria-hidden="true"><use href="#logo-q"/></svg>
+          </header>
+          <article class="case reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/alana-davila.png" alt="Alana D'Avila" loading="lazy"><h3>Alana D'Avila</h3><small>Cirurgia Plástica</small></div>
+              <p>Videomaker e fotógrafa profissional do cliente da agência ACEV para captações de cirurgias e conteúdos do Instagram da Dra. Alana e toda sua demanda audiovisual solicitada.</p>
+              <p class="rail__hint">7 vídeos · arraste para o lado →</p>
+            </div>
+            <div class="case__media rail">
+              <figure class="card-v vid" data-full="assets/cases/alana-1.mp4" aria-label="Assistir vídeo 1 de Alana D'Avila"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/alana-1.jpg" data-prev="assets/cases/alana-1-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/alana-2.mp4" aria-label="Assistir vídeo 2 de Alana D'Avila"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/alana-2.jpg" data-prev="assets/cases/alana-2-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/alana-3.mp4" aria-label="Assistir vídeo 3 de Alana D'Avila"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/alana-3.jpg" data-prev="assets/cases/alana-3-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/alana-4.mp4" aria-label="Assistir vídeo 4 de Alana D'Avila"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/alana-4.jpg" data-prev="assets/cases/alana-4-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/alana-5.mp4" aria-label="Assistir vídeo 5 de Alana D'Avila"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/alana-5.jpg" data-prev="assets/cases/alana-5-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/alana-6.mp4" aria-label="Assistir vídeo 6 de Alana D'Avila"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/alana-6.jpg" data-prev="assets/cases/alana-6-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/alana-7.mp4" aria-label="Assistir vídeo 7 de Alana D'Avila"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/alana-7.jpg" data-prev="assets/cases/alana-7-prev.mp4"></video></div></figure>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/fabiana-lustosa.png" alt="Dra. Fabiana Lustosa" loading="lazy"><h3>Dra. Fabiana Lustosa</h3><small>Endocrinologista</small></div>
+              <p>Videomaker e fotógrafa profissional do cliente da agência ACEV para captações e conteúdos do Instagram da Dra. Fabiana Lustosa e toda sua demanda audiovisual solicitada.</p>
+              <p class="rail__hint">6 vídeos · arraste para o lado →</p>
+            </div>
+            <div class="case__media rail">
+              <figure class="card-v vid" data-full="assets/cases/fabiana-1.mp4" aria-label="Assistir vídeo 1 de Dra. Fabiana Lustosa"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/fabiana-1.jpg" data-prev="assets/cases/fabiana-1-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/fabiana-2.mp4" aria-label="Assistir vídeo 2 de Dra. Fabiana Lustosa"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/fabiana-2.jpg" data-prev="assets/cases/fabiana-2-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/fabiana-3.mp4" aria-label="Assistir vídeo 3 de Dra. Fabiana Lustosa"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/fabiana-3.jpg" data-prev="assets/cases/fabiana-3-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/fabiana-4.mp4" aria-label="Assistir vídeo 4 de Dra. Fabiana Lustosa"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/fabiana-4.jpg" data-prev="assets/cases/fabiana-4-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/fabiana-5.mp4" aria-label="Assistir vídeo 5 de Dra. Fabiana Lustosa"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/fabiana-5.jpg" data-prev="assets/cases/fabiana-5-prev.mp4"></video></div></figure>
+              <figure class="card-v vid" data-full="assets/cases/fabiana-6.mp4" aria-label="Assistir vídeo 6 de Dra. Fabiana Lustosa"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/fabiana-6.jpg" data-prev="assets/cases/fabiana-6-prev.mp4"></video></div></figure>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Foto<em>grafia</em> Corporativa -->
+      <div class="group section paper" id="fotografia">
+        <div class="container">
+          <header class="group__head reveal">
+            <span class="group__num" aria-hidden="true">02</span>
+            <h2 class="title">Foto<em>grafia</em><br>Corporativa</h2>
+            <svg class="q" aria-hidden="true"><use href="#logo-q"/></svg>
+          </header>
+          <div class="strip reveal">
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/cirurgia-1.jpg" alt="Registro em centro cirúrgico 1" loading="lazy" decoding="async"></div></figure>
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/cirurgia-2.jpg" alt="Registro em centro cirúrgico 2" loading="lazy" decoding="async"></div></figure>
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/cirurgia-3.jpg" alt="Registro em centro cirúrgico 3" loading="lazy" decoding="async"></div></figure>
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/cirurgia-4.jpg" alt="Registro em centro cirúrgico 4" loading="lazy" decoding="async"></div></figure>
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/cirurgia-5.jpg" alt="Registro em centro cirúrgico 5" loading="lazy" decoding="async"></div></figure>
+          </div>
+          <p class="strip__caption reveal">Centro cirúrgico · registro de procedimentos</p>
+
+          <div class="strip reveal">
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/retrato-1.jpg" alt="Retrato corporativo da Dra. Fabiana Lustosa 1" loading="lazy" decoding="async"></div></figure>
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/retrato-2.jpg" alt="Retrato corporativo da Dra. Fabiana Lustosa 2" loading="lazy" decoding="async"></div></figure>
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/retrato-3.jpg" alt="Retrato corporativo da Dra. Fabiana Lustosa 3" loading="lazy" decoding="async"></div></figure>
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/retrato-4.jpg" alt="Retrato corporativo da Dra. Fabiana Lustosa 4" loading="lazy" decoding="async"></div></figure>
+            <figure class="photo zoom"><div class="media"><img src="assets/fotos/retrato-5.jpg" alt="Retrato corporativo da Dra. Fabiana Lustosa 5" loading="lazy" decoding="async"></div></figure>
+          </div>
+          <p class="strip__caption reveal">Retratos corporativos · Dra. Fabiana Lustosa</p>
+        </div>
+      </div>
+
+      <!-- Video<em>maker</em> Mobile -->
+      <div class="group section section--blush paper" id="videomaker-mobile">
+        <div class="container">
+          <header class="group__head reveal">
+            <span class="group__num" aria-hidden="true">03</span>
+            <h2 class="title">Video<em>maker</em><br>Mobile</h2>
+            <svg class="q" aria-hidden="true"><use href="#logo-q"/></svg>
+          </header>
+          <article class="case case--mobile reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/trent-fit.png" alt="Trent Fit" loading="lazy"><h3>Trent Fit</h3><small>Moda fitness</small></div>
+              <p>Social Media do primeiro ano de marca, fui a profissional responsável por planejamento, estratégia, captação, roteirização e edição dos conteúdos da Trent Fit, na Agência TANQ Comunicação.</p>
+              <p>A marca logo ganhou o carisma do público e uma retenção orgânica única.</p>
+            </div>
+            <div class="case__media">
+              <div class="phones">
+                <figure class="phone vid" data-full="assets/cases/trent-1.mp4" aria-label="Assistir vídeo 1 de Trent Fit"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/trent-1.jpg" data-prev="assets/cases/trent-1-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/trent-2.mp4" aria-label="Assistir vídeo 2 de Trent Fit"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/trent-2.jpg" data-prev="assets/cases/trent-2-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/trent-3.mp4" aria-label="Assistir vídeo 3 de Trent Fit"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/trent-3.jpg" data-prev="assets/cases/trent-3-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/trent-4.mp4" aria-label="Assistir vídeo 4 de Trent Fit"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/trent-4.jpg" data-prev="assets/cases/trent-4-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/trent-5.mp4" aria-label="Assistir vídeo 5 de Trent Fit"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/trent-5.jpg" data-prev="assets/cases/trent-5-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/trent-6.mp4" aria-label="Assistir vídeo 6 de Trent Fit"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/trent-6.jpg" data-prev="assets/cases/trent-6-prev.mp4"></video></div></figure>
+              </div>
+              <div class="rounds">
+                <figure class="round zoom"><div class="media"><img src="assets/cases/trent-r1.jpg" alt="Trent Fit: bastidores 1" loading="lazy" decoding="async"></div></figure>
+                <figure class="round zoom"><div class="media"><img src="assets/cases/trent-r2.jpg" alt="Trent Fit: bastidores 2" loading="lazy" decoding="async"></div></figure>
+                <figure class="round zoom"><div class="media"><img src="assets/cases/trent-r3.jpg" alt="Trent Fit: bastidores 3" loading="lazy" decoding="async"></div></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="case case--mobile reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/panifatima.png" alt="PaniFátima" loading="lazy"><h3>PaniFátima</h3><small>Pães &amp; Refeições</small></div>
+              <p>Social Media da empresa PNSF, fui a profissional responsável por planejamento, estratégia, captação, roteirização e edição dos conteúdos, na Agência TANQ Comunicação.</p>
+              <p>A empresa na época viralizou com alguns conteúdos curtos, engajamento orgânico e campanhas irresistíveis.</p>
+            </div>
+            <div class="case__media">
+              <div class="phones">
+                <figure class="phone vid" data-full="assets/cases/pani-1.mp4" aria-label="Assistir vídeo 1 de PaniFátima"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/pani-1.jpg" data-prev="assets/cases/pani-1-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/pani-2.mp4" aria-label="Assistir vídeo 2 de PaniFátima"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/pani-2.jpg" data-prev="assets/cases/pani-2-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/pani-3.mp4" aria-label="Assistir vídeo 3 de PaniFátima"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/pani-3.jpg" data-prev="assets/cases/pani-3-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/pani-4.mp4" aria-label="Assistir vídeo 4 de PaniFátima"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/pani-4.jpg" data-prev="assets/cases/pani-4-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/pani-5.mp4" aria-label="Assistir vídeo 5 de PaniFátima"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/pani-5.jpg" data-prev="assets/cases/pani-5-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/pani-6.mp4" aria-label="Assistir vídeo 6 de PaniFátima"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/pani-6.jpg" data-prev="assets/cases/pani-6-prev.mp4"></video></div></figure>
+              </div>
+              <div class="rounds">
+                <figure class="round zoom"><div class="media"><img src="assets/cases/pani-r1.jpg" alt="PaniFátima: bastidores 1" loading="lazy" decoding="async"></div></figure>
+                <figure class="round zoom"><div class="media"><img src="assets/cases/pani-r2.jpg" alt="PaniFátima: bastidores 2" loading="lazy" decoding="async"></div></figure>
+                <figure class="round zoom"><div class="media"><img src="assets/cases/pani-r3.jpg" alt="PaniFátima: bastidores 3" loading="lazy" decoding="async"></div></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="case case--mobile reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/casa-freitas.png" alt="Casa Freitas" loading="lazy"><h3>Casa Freitas</h3><small>Varejo</small></div>
+              <p>Videomaker Mobile a convite da Jornalista e Influenciadora UGC, Priscila Sampaio, para a Casa Freitas. Sou a profissional freelancer responsável por roteirização, captação e edição profissional dos conteúdos do Meu Clube Casa Freitas, onde divulgamos as promoções do mês vigente.</p>
+            </div>
+            <div class="case__media">
+              <div class="phones">
+                <figure class="phone vid" data-full="assets/cases/freitas-1.mp4" aria-label="Assistir vídeo 1 de Casa Freitas"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/freitas-1.jpg" data-prev="assets/cases/freitas-1-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/freitas-2.mp4" aria-label="Assistir vídeo 2 de Casa Freitas"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/freitas-2.jpg" data-prev="assets/cases/freitas-2-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/freitas-3.mp4" aria-label="Assistir vídeo 3 de Casa Freitas"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/freitas-3.jpg" data-prev="assets/cases/freitas-3-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/freitas-4.mp4" aria-label="Assistir vídeo 4 de Casa Freitas"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/freitas-4.jpg" data-prev="assets/cases/freitas-4-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/freitas-5.mp4" aria-label="Assistir vídeo 5 de Casa Freitas"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/freitas-5.jpg" data-prev="assets/cases/freitas-5-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/freitas-6.mp4" aria-label="Assistir vídeo 6 de Casa Freitas"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/freitas-6.jpg" data-prev="assets/cases/freitas-6-prev.mp4"></video></div></figure>
+              </div>
+              <figure class="tall zoom"><div class="media"><img src="assets/cases/freitas-tall.jpg" alt="Casa Freitas: bastidores" loading="lazy" decoding="async"></div></figure>
+            </div>
+          </article>
+
+          <article class="case case--mobile reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/mabrouk.png" alt="Mabrouk Consórcio" loading="lazy"><h3>Mabrouk Consórcio</h3><small>Consórcios</small></div>
+              <p>Videomaker Mobile a convite da CEO, Flaviana Dahrouge Marangoni, da empresa Mabrouk Consórcios, para realizações de captações, edições e imagens dos seus conteúdos e presença no audiovisual para redes sociais como Instagram e TikTok.</p>
+            </div>
+            <div class="case__media">
+              <div class="phones">
+                <figure class="phone vid" data-full="assets/cases/mabrouk-1.mp4" aria-label="Assistir vídeo 1 de Mabrouk Consórcio"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/mabrouk-1.jpg" data-prev="assets/cases/mabrouk-1-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/mabrouk-2.mp4" aria-label="Assistir vídeo 2 de Mabrouk Consórcio"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/mabrouk-2.jpg" data-prev="assets/cases/mabrouk-2-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/mabrouk-3.mp4" aria-label="Assistir vídeo 3 de Mabrouk Consórcio"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/mabrouk-3.jpg" data-prev="assets/cases/mabrouk-3-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/mabrouk-4.mp4" aria-label="Assistir vídeo 4 de Mabrouk Consórcio"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/mabrouk-4.jpg" data-prev="assets/cases/mabrouk-4-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/mabrouk-5.mp4" aria-label="Assistir vídeo 5 de Mabrouk Consórcio"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/mabrouk-5.jpg" data-prev="assets/cases/mabrouk-5-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/mabrouk-6.mp4" aria-label="Assistir vídeo 6 de Mabrouk Consórcio"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/mabrouk-6.jpg" data-prev="assets/cases/mabrouk-6-prev.mp4"></video></div></figure>
+              </div>
+              <figure class="tall zoom"><div class="media"><img src="assets/cases/mabrouk-tall.jpg" alt="Mabrouk Consórcio: bastidores" loading="lazy" decoding="async"></div></figure>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- <em>E</em>ventos Real Time -->
+      <div class="group section paper" id="eventos">
+        <div class="container">
+          <header class="group__head reveal">
+            <span class="group__num" aria-hidden="true">04</span>
+            <h2 class="title"><em>E</em>ventos<br>Real Time</h2>
+            <svg class="q" aria-hidden="true"><use href="#logo-q"/></svg>
+          </header>
+          <article class="case case--mobile reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/dfb.png" alt="DFB Festival" loading="lazy"><h3>DFB Festival</h3><small>Moda · Fortaleza</small></div>
+              <p>Cobertura em tempo real do DFB Fashion Summit: desfiles, bastidores e credenciados, com conteúdo publicado durante o evento.</p>
+            </div>
+            <div class="case__media">
+              <div class="phones">
+                <figure class="phone vid" data-full="assets/cases/dfb-1.mp4" aria-label="Assistir vídeo 1 de DFB Festival"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/dfb-1.jpg" data-prev="assets/cases/dfb-1-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/dfb-2.mp4" aria-label="Assistir vídeo 2 de DFB Festival"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/dfb-2.jpg" data-prev="assets/cases/dfb-2-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/dfb-3.mp4" aria-label="Assistir vídeo 3 de DFB Festival"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/dfb-3.jpg" data-prev="assets/cases/dfb-3-prev.mp4"></video></div></figure>
+              </div>
+              <div class="rounds">
+                <figure class="round zoom"><div class="media"><img src="assets/cases/dfb-r1.jpg" alt="DFB Festival: bastidores 1" loading="lazy" decoding="async"></div></figure>
+                <figure class="round zoom"><div class="media"><img src="assets/cases/dfb-r2.jpg" alt="DFB Festival: bastidores 2" loading="lazy" decoding="async"></div></figure>
+                <figure class="round zoom"><div class="media"><img src="assets/cases/dfb-r3.jpg" alt="DFB Festival: bastidores 3" loading="lazy" decoding="async"></div></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="case case--mobile reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/intro.png" alt="INTRO" loading="lazy"><h3>INTRO</h3><small>Festival</small></div>
+              <p>Cobertura real time do festival INTRO: palco, público e ativações de marca entregues na hora para as redes.</p>
+            </div>
+            <div class="case__media">
+              <div class="phones">
+                <figure class="phone vid" data-full="assets/cases/intro-1.mp4" aria-label="Assistir vídeo 1 de INTRO"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/intro-1.jpg" data-prev="assets/cases/intro-1-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/intro-2.mp4" aria-label="Assistir vídeo 2 de INTRO"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/intro-2.jpg" data-prev="assets/cases/intro-2-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/intro-3.mp4" aria-label="Assistir vídeo 3 de INTRO"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/intro-3.jpg" data-prev="assets/cases/intro-3-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/intro-4.mp4" aria-label="Assistir vídeo 4 de INTRO"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/intro-4.jpg" data-prev="assets/cases/intro-4-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/intro-5.mp4" aria-label="Assistir vídeo 5 de INTRO"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/intro-5.jpg" data-prev="assets/cases/intro-5-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/intro-6.mp4" aria-label="Assistir vídeo 6 de INTRO"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/intro-6.jpg" data-prev="assets/cases/intro-6-prev.mp4"></video></div></figure>
+              </div>
+              <figure class="tall zoom"><div class="media"><img src="assets/cases/intro-tall.jpg" alt="INTRO: bastidores" loading="lazy" decoding="async"></div></figure>
+            </div>
+          </article>
+
+          <article class="case case--mobile reveal">
+            <div class="case__info">
+              <div class="client"><img class="client__logo" src="assets/logos/aracati.png" alt="Prefeitura do Aracati" loading="lazy"><h3>Prefeitura do Aracati</h3><small>Alegria de ser aracatiense</small></div>
+              <p>Cobertura em tempo real das festividades da cidade: shows, blocos e bastidores publicados ao longo do evento.</p>
+            </div>
+            <div class="case__media">
+              <div class="phones">
+                <figure class="phone vid" data-full="assets/cases/aracati-1.mp4" aria-label="Assistir vídeo 1 de Prefeitura do Aracati"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/aracati-1.jpg" data-prev="assets/cases/aracati-1-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/aracati-2.mp4" aria-label="Assistir vídeo 2 de Prefeitura do Aracati"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/aracati-2.jpg" data-prev="assets/cases/aracati-2-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/aracati-3.mp4" aria-label="Assistir vídeo 3 de Prefeitura do Aracati"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/aracati-3.jpg" data-prev="assets/cases/aracati-3-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/aracati-4.mp4" aria-label="Assistir vídeo 4 de Prefeitura do Aracati"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/aracati-4.jpg" data-prev="assets/cases/aracati-4-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/aracati-5.mp4" aria-label="Assistir vídeo 5 de Prefeitura do Aracati"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/aracati-5.jpg" data-prev="assets/cases/aracati-5-prev.mp4"></video></div></figure>
+                <figure class="phone vid" data-full="assets/cases/aracati-6.mp4" aria-label="Assistir vídeo 6 de Prefeitura do Aracati"><div class="media"><video muted loop playsinline preload="none" poster="assets/cases/aracati-6.jpg" data-prev="assets/cases/aracati-6-prev.mp4"></video></div></figure>
+              </div>
+              <div class="rounds">
+                <figure class="round zoom"><div class="media"><img src="assets/cases/aracati-r1.jpg" alt="Prefeitura do Aracati: bastidores 1" loading="lazy" decoding="async"></div></figure>
+                <figure class="round zoom"><div class="media"><img src="assets/cases/aracati-r2.jpg" alt="Prefeitura do Aracati: bastidores 2" loading="lazy" decoding="async"></div></figure>
+                <figure class="round zoom"><div class="media"><img src="assets/cases/aracati-r3.jpg" alt="Prefeitura do Aracati: bastidores 3" loading="lazy" decoding="async"></div></figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section class="cta" id="contato">
+      <div class="cta__circle" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <h2 class="cta__title reveal">Aposte<br>em quem <em>Q</em>ria.</h2>
+        <p class="cta__sub reveal">Vamos contar a história da sua marca? Entre em contato e reserve sua data.</p>
+        <div class="cta__actions reveal">
+          <a class="btn btn--pink" href="https://wa.me/5585996287631?text=Ol%C3%A1%2C%20Qetlei!%20Vim%20pelo%20site%20e%20quero%20reservar%20uma%20data." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="btn btn--ghost" href="mailto:aqriativa@gmail.com">Enviar e-mail</a>
+        </div>
+        <ul class="cta__contacts reveal">
+          <li>Instagram: <a href="https://www.instagram.com/qetlei" target="_blank" rel="noopener">@qetlei</a> · <a href="https://www.instagram.com/qriativa" target="_blank" rel="noopener">@qriativa</a></li>
+          <li>WhatsApp: <a href="https://wa.me/5585996287631" target="_blank" rel="noopener">(85) 9 9628.7631</a></li>
+          <li>E-mail: <a href="mailto:aqriativa@gmail.com">aqriativa@gmail.com</a></li>
+        </ul>
+      </div>
+      <svg class="q cta__q" aria-hidden="true"><use href="#logo-q"/></svg>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="footer__brand" aria-label="Qriativa, voltar ao topo">
+        <svg class="q" aria-hidden="true"><use href="#logo-q"/></svg><span>riativa<i>.</i></span>
+      </a>
+      <nav class="footer__links" aria-label="Redes e contato">
+        <a href="https://www.instagram.com/qriativa" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/5585996287631" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:aqriativa@gmail.com">E-mail</a>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Qriativa · Qetlei Jennifer. Todos os direitos reservados.</p>
+      <p class="footer__dev">Site desenvolvido por <a href="https://keliane.dev" target="_blank" rel="noopener">keliane.dev</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/refino.js"></script>
+</body>
+</html>
