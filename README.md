@@ -16,17 +16,22 @@ Depois abra <http://localhost:5500>.
 
 ```
 index.html        conteúdo e seções
-css/style.css     estilos base (paleta, formas de flor, celulares, responsivo)
-css/refino.css    refino visual (hero, serviços, contato, vídeos, lightbox, rodapé)
-js/main.js        menu mobile, nav ao rolar, animação de entrada
-js/refino.js      animações, link ativo, prévias de vídeo e lightbox
+css/style.css     todos os estilos (paleta, flor, nav, hero, seções, responsivo)
+js/main.js        navegação, menu mobile, prévias de vídeo, lightbox e fallback de animação
+js/motion.js      animações de entrada e de scroll (GSAP + ScrollTrigger + Lenis)
 assets/
   favicon.svg
   brand/          textura de papel dos slides
   fotos/          foto da Qetlei + fotografia corporativa
-  cases/          vídeos, prévias e fotos de cada cliente
+  cases/          vídeos, prévias e fotos dos clientes de vídeo e eventos
+  social/         posts, impressos e reels dos clientes de social media
   logos/          logos dos clientes
 ```
+
+## Animações
+
+As animações usam [GSAP](https://gsap.com) com ScrollTrigger e [Lenis](https://lenis.darkroom.engineering) (rolagem suave), carregados do jsDelivr.
+Se esses scripts não carregarem, ou se o sistema estiver com "reduzir movimento" ligado, o site continua funcionando com uma entrada simples em fade.
 
 ## Mídias
 
